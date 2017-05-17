@@ -1,0 +1,126 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/sfondoMain"
+    android:screenOrientation="portrait">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/scrollView"
+        android:visibility="gone">
+
+
+        <TextView
+            android:id="@+id/coordinate_txt"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="12sp"
+            android:visibility="gone"
+             />
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/posizione_vicina"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_room_ve"
+        android:layout_below="@+id/altra_posizione"
+        android:layout_alignLeft="@+id/altra_posizione"
+        android:layout_alignStart="@+id/altra_posizione" />
+    <TextView
+        android:id="@+id/posizione_vicina_testo"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="@string/indica_la_fermata_pi_vicina_rispetto_alla_tua_posizione"
+        android:textColor="#ffffff"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_alignBottom="@+id/posizione_vicina"
+        android:layout_alignLeft="@+id/mia_posizione_testo"
+        android:layout_alignStart="@+id/mia_posizione_testo"
+        android:gravity="center_vertical" />
+
+
+    <ImageView
+        android:id="@+id/altra_posizione"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_room_re"
+        android:layout_below="@+id/mia_posizione"
+        android:layout_alignLeft="@+id/mia_posizione"
+        android:layout_alignStart="@+id/mia_posizione" />
+    <TextView
+        android:id="@+id/altra_posizione_testo"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="@string/indica_le_fermate_meno_vicine_rispetto_alla_tua_posizione"
+        android:textColor="#ffffff"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:gravity="center_vertical"
+        android:layout_above="@+id/mia_posizione_testo"
+        android:layout_alignLeft="@+id/go_back_2"
+        android:layout_alignStart="@+id/go_back_2" />
+
+
+
+    <ImageView
+        android:id="@+id/mia_posizione"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_room_fu"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/altra_posizione_testo"
+        android:layout_toStartOf="@+id/altra_posizione_testo"
+        android:layout_marginRight="24dp"
+        android:layout_marginEnd="24dp" />
+    <TextView
+        android:id="@+id/mia_posizione_testo"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="@string/indica_la_tua_posizione"
+        android:textColor="#ffffff"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_alignBottom="@+id/altra_posizione"
+        android:layout_alignLeft="@+id/altra_posizione_testo"
+        android:layout_alignStart="@+id/altra_posizione_testo"
+        android:gravity="center_vertical" />
+
+
+
+
+    <ImageView
+        android:id="@+id/vamos"
+        android:src="@drawable/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scrollView"
+        android:layout_centerHorizontal="true" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/check_lat_lon"
+        android:id="@+id/btn_coordinate"
+        android:onClick="OnClicMap"
+        android:textColor="#ffffff"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:background="?android:attr/selectableItemBackground"
+        android:layout_below="@+id/vamos"
+        android:layout_toRightOf="@+id/scrollView"
+        android:layout_toEndOf="@+id/scrollView" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Indietro"
+        android:id="@+id/go_back_2"
+        android:onClick="go_back_2"
+        android:background="?android:attr/selectableItemBackground"
+        android:textColor="#ffffff"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

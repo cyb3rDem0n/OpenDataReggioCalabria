@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Vamos!</string>
+    <string name="read">READ DB</string>
+    <string name="read_json">READ JSON</string>
+    <string name="popolamappa">POPOLATE MAP</string>
+    <string name="permission_rationale_location">permission_rationale_location</string>
+    <string name="permission_required_toast">permission_required_toast</string>
+    <string name="location_permission_denied">location_permission_denied</string>
+    <string name="id_paline">id paline</string>
+    <string name="_3_risultato_corse_orari">3 RISULTATO CORSE/ORARI</string>
+    <string name="check_lat_lon"> <u><b>CLICCA QUI</b></u> e ti mostrerò la mappa con le fermate \n più vicine a te.</string>
+    <string name="alfa_release_of_open_data_reggio_calabria_app">alfa release of open data reggio calabria app</string>
+    <string name="title_activity_map">MapActivity</string>
+    <string name="alert_text">Benvenuto in VAMOS! Clicca sulla scritta e scegli il bus di tuo interesse, potrai
+        velocemente visualizzare le sue fermate su una mappa. Questa app utilizza gil OpenData ed è ancora
+    in fase sperimentale. Buon Viaggio.\n\n
+    Vuoi Continuare?</string>
+    <string name="indica_la_tua_posizione">La tua posizione.</string>
+    <string name="indica_le_fermate_meno_vicine_rispetto_alla_tua_posizione">Fermate più lontane.</string>
+    <string name="indica_la_fermata_pi_vicina_rispetto_alla_tua_posizione">Fermata più vicina.</string>
+    <string name="indietro">INDIETRO</string>
+    <string name="ho_trovato_quello_che_cercavi_clicca_per_continuare">...ho trovato quello che cercavi, <u><b>CLICCA QUI</b></u> per continuare!</string>
+    <string name="open_data_reggio_calabria_transport">Open Data Reggio Calabria Transport App</string>
+    <string name="title_activity_toolbar_test">ToolbarTest</string>
+</resources>
