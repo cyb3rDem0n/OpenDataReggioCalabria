@@ -12,7 +12,7 @@
     android:layout_width="match_parent"
     android:layout_height="475dp"
     tools:context="com.rekrux.OpenDataReggioCalabria.PopolatedMap"
-    android:apiKey="AIzaSyAOqihdqckI9-QW9QH9VT6r-4l-dHW3GPs"
+    android:apiKey="yourkeyhere..."
     />
 
 <View
